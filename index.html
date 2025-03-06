@@ -1,45 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Prize Carousel</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIYA - GIFT VOUCHER</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
     <div class="container">
-        <div id="prizeCarousel" class="carousel">
-            <!-- Cards will be dynamically inserted here by JavaScript -->
-        </div>
+        <div id="prizeCarousel" class="carousel"></div>
         <div>
             <button id="startStopBtn">เริ่มสุ่ม</button>
         </div>
-        <!-- Moved button under the carousel -->
     </div>
-    
-    <!-- The button is now outside the carousel container, directly under it -->
 
-<!-- The Modal -->
-<!-- Modal Container -->
-<div id="modal" class="modal">
-    <!-- Modal Content -->
-    <div class="modal-content">
-      <!-- Close Button -->
-      <span class="close-button">&times;</span>
-      <!-- Image Cover -->
-      <img src="path/to/your/image.jpg" alt="Cover Image" class="modal-image">
-      <!-- Modal Title -->
-      <center>
-        <h2>ขอแสดงความยินดี</h2>
-        <!-- Detail Paragraph -->
-        <p>ขอแสดงความยินดีด้วย</p>
-        </center>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="path/to/your/image.jpg" alt="Cover Image" class="modal-image" />
+            <center>
+                <h2>ขอแสดงความยินดี</h2>
+                <p>ขอแสดงความยินดีด้วย</p>
+            </center>
+        </div>
     </div>
-  </div>
-  
 
-<script src="script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
+
 </html>

@@ -23,13 +23,7 @@ function showModal() {
   // Attach close event to the close button
 document.querySelector('.close-button').addEventListener('click', closeModal);
 async function fetchPrizes() {
-    // Placeholder for fetching prize data from Notion
-    // This should be replaced with a call to your server or serverless function
-    // prizes = [
-    //     // Mock data
-    //     { name: 'Prize 1', imageUrl: 'https://example.com/prize1.jpg', status: 'In' },
-    //     // Add more prizes as needed
-    // ];
+   
     let settings = {
       "url": "https://lucky-draw-backend-final.onrender.com/getAll",
       "method": "GET",
@@ -54,10 +48,6 @@ function updateCarousel() {
     prizes.slice(0, 5).forEach((prize, index) => {
         const card = document.createElement('div');
         card.className = 'card';
-        // card.innerHTML = `
-        //     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-xDOxvQC8IRb8kBaOeqz1lgfe4XAJJiYTA&usqp=CAU" alt="Prize">
-
-        // `;
         card.innerHTML = `
             <img src="${prize.prize_cover}" alt="Prize">
 
@@ -109,9 +99,6 @@ function selectPrize() {
     document.querySelector('.modal-content p').textContent = `ท่านได้รับ ${selectedPrize.prize_name}`; // Assuming 'data.title' is your modal title
 
     showModal();
-
-    // Here, you'd update the prize status in Notion via an API call
-    // Remember to do this securely
 }
 
 // Update in init function
