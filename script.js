@@ -51,15 +51,6 @@ function updateCarousel() {
     const carousel = document.getElementById('prizeCarousel');
     carousel.innerHTML = ''; // Clear current contents
 
-    const backgroundImages = [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxN2bdYmq8MAOJVSYYrkKX4MHS_mswsQDQD7qppG-Nw_ralKK2axRG4m1idmC-WVeV4WY&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-xDOxvQC8IRb8kBaOeqz1lgfe4XAJJiYTA&usqp=CAU', // Replace with actual image URLs
-        'https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L3JtNTM1YmF0Y2gyLXF1ZXN0aW9uLTA3LnBuZw.png',
-        'https://atlas-content-cdn.pixelsquid.com/stock-images/question-mark-logo-9KKWdL1-600.jpg',
-        'https://img.lovepik.com/free-png/20210924/lovepik-black-question-mark-png-image_401357217_wh1200.png'
-    ];
-    // Display 5 cards at any time
-
     prizes.slice(0, 5).forEach((prize, index) => {
         const card = document.createElement('div');
         card.className = 'card';
