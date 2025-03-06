@@ -79,7 +79,7 @@ function selectPrize() {
     const selectedPrize = prizes[Math.floor(Math.random() * Math.min(5, prizes.length))];
 
     let settings = {
-        "url": "https://lucky-draw-backend-api.onrender.com/selectedPrize",
+        "url": "https://lucky-draw-backend-final.onrender.com/selectedPrize",
         "method": "POST",
         "timeout": 0,
         "headers": {
