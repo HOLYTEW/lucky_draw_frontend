@@ -31,7 +31,7 @@ async function fetchPrizes() {
     //     // Add more prizes as needed
     // ];
     let settings = {
-      "url": "https://lucky-draw-backend-api-t7li.onrender.com/getAll",
+      "url": "https://lucky-draw-backend-final.onrender.com/getAll",
       "method": "GET",
       "headers": {
         "ngrok-skip-browser-warning": "69420",
